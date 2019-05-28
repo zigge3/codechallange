@@ -1,0 +1,13 @@
+---
+language: node_js
+node_js:
+- 'lts/*'
+sudo: false
+before_install:
+- npm i -g npm@latest
+install:
+- npm ci
+script:
+- bin/fetch-configlet
+- bin/configlet lint .
+- make test-travis
