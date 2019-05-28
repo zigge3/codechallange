@@ -1,0 +1,3 @@
+[submodule "Challanges"]
+	path = Challanges
+	url = https://github.com/exercism/javascript
